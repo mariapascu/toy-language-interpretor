@@ -1,0 +1,281 @@
+
+ID: 1
+Exe Stack:
+Exe Stack:
+((((PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}}) Model.ForkStmt@34a245ab) NewStmt{var='a', exp=ConstExp{number=22}}) AssignStmt{id='v', exp=ConstExp{number=10}})
+
+SymTable:
+SymTable:
+
+Out:
+Out:
+
+Heap:
+Heap:
+
+ID: 1
+Exe Stack:
+Exe Stack:
+AssignStmt{id='v', exp=ConstExp{number=10}}
+(((PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}}) Model.ForkStmt@34a245ab) NewStmt{var='a', exp=ConstExp{number=22}})
+
+SymTable:
+SymTable:
+
+Out:
+Out:
+
+Heap:
+Heap:
+
+ID: 1
+Exe Stack:
+Exe Stack:
+(((PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}}) Model.ForkStmt@34a245ab) NewStmt{var='a', exp=ConstExp{number=22}})
+
+SymTable:
+SymTable:
+v --> 10
+
+Out:
+Out:
+
+Heap:
+Heap:
+
+ID: 1
+Exe Stack:
+Exe Stack:
+NewStmt{var='a', exp=ConstExp{number=22}}
+((PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}}) Model.ForkStmt@34a245ab)
+
+SymTable:
+SymTable:
+v --> 10
+
+Out:
+Out:
+
+Heap:
+Heap:
+
+ID: 1
+Exe Stack:
+Exe Stack:
+((PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}}) Model.ForkStmt@34a245ab)
+
+SymTable:
+SymTable:
+a --> 1
+v --> 10
+
+Out:
+Out:
+
+Heap:
+Heap:
+1 --> 22
+
+ID: 1
+Exe Stack:
+Exe Stack:
+Model.ForkStmt@34a245ab
+(PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}})
+
+SymTable:
+SymTable:
+a --> 1
+v --> 10
+
+Out:
+Out:
+
+Heap:
+Heap:
+1 --> 22
+
+ID: 1
+Exe Stack:
+Exe Stack:
+(PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}})
+
+SymTable:
+SymTable:
+a --> 1
+v --> 10
+
+Out:
+Out:
+
+Heap:
+Heap:
+1 --> 22
+
+ID: 10
+Exe Stack:
+Exe Stack:
+(((PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}}) AssignStmt{id='v', exp=ConstExp{number=32}}) WriteHeapStmt{var='a', exp=ConstExp{number=30}})
+
+SymTable:
+SymTable:
+a --> 1
+v --> 10
+
+Out:
+Out:
+
+Heap:
+Heap:
+1 --> 22
+
+ID: 1
+Exe Stack:
+Exe Stack:
+PrintStmt{exp=VarExp{id='v'}}
+PrintStmt{exp=ReadHeapExp{var='a'}}
+
+SymTable:
+SymTable:
+a --> 1
+v --> 10
+
+Out:
+Out:
+
+Heap:
+Heap:
+1 --> 22
+
+ID: 10
+Exe Stack:
+Exe Stack:
+WriteHeapStmt{var='a', exp=ConstExp{number=30}}
+((PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}}) AssignStmt{id='v', exp=ConstExp{number=32}})
+
+SymTable:
+SymTable:
+a --> 1
+v --> 10
+
+Out:
+Out:
+
+Heap:
+Heap:
+1 --> 22
+
+ID: 1
+Exe Stack:
+Exe Stack:
+PrintStmt{exp=ReadHeapExp{var='a'}}
+
+SymTable:
+SymTable:
+a --> 1
+v --> 10
+
+Out:
+Out:
+10
+
+Heap:
+Heap:
+1 --> 30
+
+ID: 10
+Exe Stack:
+Exe Stack:
+((PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}}) AssignStmt{id='v', exp=ConstExp{number=32}})
+
+SymTable:
+SymTable:
+a --> 1
+v --> 10
+
+Out:
+Out:
+10
+
+Heap:
+Heap:
+1 --> 30
+
+ID: 10
+Exe Stack:
+Exe Stack:
+AssignStmt{id='v', exp=ConstExp{number=32}}
+(PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}})
+
+SymTable:
+SymTable:
+a --> 1
+v --> 10
+
+Out:
+Out:
+10
+30
+
+Heap:
+Heap:
+1 --> 30
+
+ID: 10
+Exe Stack:
+Exe Stack:
+(PrintStmt{exp=ReadHeapExp{var='a'}} PrintStmt{exp=VarExp{id='v'}})
+
+SymTable:
+SymTable:
+a --> 1
+v --> 32
+
+Out:
+Out:
+10
+30
+
+Heap:
+Heap:
+1 --> 30
+
+ID: 10
+Exe Stack:
+Exe Stack:
+PrintStmt{exp=VarExp{id='v'}}
+PrintStmt{exp=ReadHeapExp{var='a'}}
+
+SymTable:
+SymTable:
+a --> 1
+v --> 32
+
+Out:
+Out:
+10
+30
+
+Heap:
+Heap:
+1 --> 30
+
+ID: 10
+Exe Stack:
+Exe Stack:
+PrintStmt{exp=ReadHeapExp{var='a'}}
+
+SymTable:
+SymTable:
+a --> 1
+v --> 32
+
+Out:
+Out:
+10
+30
+32
+
+Heap:
+Heap:
+1 --> 30
+

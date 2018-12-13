@@ -1,0 +1,25 @@
+        IStmt ex1 = new CompStmt(new AssignStmt("a", new ArithExp('+',new ConstExp(2),new
+                ArithExp('/',new ConstExp(6), new ConstExp(3)))),
+                new CompStmt(new AssignStmt("b",new ArithExp('+',new VarExp("a"), new
+                        ConstExp(1))), new PrintStmt(new VarExp("b"))));
+        IStmt ex2 = new CompStmt(new OpenRFileStmt("file", "input.txt"),
+                new CompStmt(new ReadFileStmt(new VarExp("file"), "b"),
+                        new CompStmt(new ReadFileStmt(new VarExp("file"), "a"),
+                                new CloseRFileStmt(new VarExp("file")))));
+        IStmt ex3 = new CompStmt(new ReadFileStmt(new VarExp("help"), "a"), new PrintStmt(new VarExp("a")));
+        MyIStack<IStmt> stk1 = new MyStack<IStmt>(new Stack<IStmt>());
+        stk1.push(ex1);
+        MyIDictionary<String, Integer> symTbl1 = new MyDictionary<String, Integer>(new HashMap<String, Integer>());
+        MyIList<Integer> out1 = new MyList<Integer>(new ArrayList<Integer>());
+        MyITable<Integer, String, BufferedReader> fileTable1 = new MyTable<>();
+        PrgState state1 = new PrgState(stk1, symTbl1, out1, fileTable1);
+        IRepository repo1 = new Repository(state1, fileName);
+        Controller ctrl1 = new Controller(repo1, true);
+        MyIStack<IStmt> stk2 = new MyStack<IStmt>(new Stack<IStmt>());
+        stk2.push(ex2);
+        MyIDictionary<String, Integer> symTbl2 = new MyDictionary<String, Integer>(new HashMap<String, Integer>());
+        MyIList<Integer> out2 = new MyList<Integer>(new ArrayList<Integer>());
+        MyITable<Integer, String, BufferedReader> fileTable2 = new MyTable<>();
+        PrgState state2 = new PrgState(stk2, symTbl2, out2, fileTable2);
+        IRepository repo2 = new Repository(state2, fileName);
+        Controller ctrl2 = new Controller(repo2, true);
